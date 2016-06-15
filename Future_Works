@@ -1,0 +1,11 @@
+Drop test to determine transfer function using bode analysis
+1 degree of freedom controller design (position based with integrator)
+3 degree of freedom controller design (position based with integrator)
+brushless motor controllers (Electrical)
+    -redo drop tests (bode) with brushless motors
+    -redesign controllers
+machine flywheel masses for motors
+finish design of flight system (mechanical)
+    -motor selection (brushless)
+    -flywheel sizing
+    -system mounting
