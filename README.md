@@ -4,4 +4,4 @@ Portland State University is developing Oregon’s first orbital satellite, a 2U
 
 Both of the previous tests were conducted using a simple open loop proportional controller that was tuned via test to induce a slightly underdamped response. This was to create data that can be more easily compared to an ideal model.
 
-![CubeSat Model Comparison](https://github.com/oresat/reaction-wheels/blob/master/Modeling/Gyro%20Data%20vs%20Model.jpg)
+![CubeSat Model Comparison](https://github.com/oresat/reaction-wheels/blob/master/Modeling/Gyro_Data_vs_Model.png)
