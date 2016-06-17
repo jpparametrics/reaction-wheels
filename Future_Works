@@ -3,9 +3,17 @@ Drop test to determine transfer function using bode analysis
 3 degree of freedom controller design (position based with integrator)
 brushless motor controllers (Electrical)
     -redo drop tests (bode) with brushless motors
-    -redesign controllers
+    -redesign 3-DOF controller
 machine flywheel masses for motors
 finish design of flight system (mechanical)
     -motor selection (brushless)
     -flywheel sizing
     -system mounting
+    
+
+Things to note about curent rev (as of 6-17-2016):
+    -Edison microcontroller is using Ubilinux (not Yocto which is the stock OS), this allows "normal" Linux characteristics (apt, sudo, etc...)
+    -brushed motors are being used because COTS brushless (sensorless) motors are jittery at slow speed
+    -brushed motors are driven by the edison using motor drivers (H-bridge), the connection between the two is the sparkfun GPIO module with a custom designed board. The GPIO module is "broken" (heat stress from de-soldering) so there are mod wires to remove broken pin/traces. A new GPIO module will be neccesarry when brushless motors are added.
+    -the motors are 45 degrees seperated horizontally (evenly spaced), each motor is 53 degrees from vertical. That number is based on the moment of inertia estimate of the 2U CubeSat, creating equivalent control authority between all three cardinal axes.
+    
