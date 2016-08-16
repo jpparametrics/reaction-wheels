@@ -50,11 +50,11 @@
   \makeatother%
   \begin{picture}(1,0.75173611)%
     \put(0,0){\includegraphics[width=\unitlength]{Gyro_Data_vs_Model.pdf}}%
-    \put(0.1396375,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.30025869,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
-    \put(0.46088023,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.4}}}%
-    \put(0.62150171,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.6}}}%
-    \put(0.78212325,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.8}}}%
+    \put(0.1396375,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.30025869,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
+    \put(0.46088023,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.4}}}%
+    \put(0.62150171,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.6}}}%
+    \put(0.78212325,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.8}}}%
     \put(0.12131164,0.14536111){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{-40}}}%
     \put(0.12131164,0.26761113){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{-20}}}%
     \put(0.12131164,0.38986111){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{0}}}%
@@ -62,20 +62,20 @@
     \put(0.12131164,0.63436128){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{40}}}%
     \put(0.51749998,0.0529844){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{time (s)}}}%
     \put(0.08658941,0.38986111){\color[rgb]{0,0,1}\rotatebox{90}{\makebox(0,0)[b]{\smash{Cube Angular Velocity (deg/s)}}}}%
-    \put(0.1396375,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.30025869,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
-    \put(0.46088023,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.4}}}%
-    \put(0.62150171,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.6}}}%
-    \put(0.78212325,0.07555384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.8}}}%
+    \put(0.1396375,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.30025869,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
+    \put(0.46088023,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.4}}}%
+    \put(0.62150171,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.6}}}%
+    \put(0.78212325,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.8}}}%
     \put(0.91368919,0.08423609){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{-1}}}%
     \put(0.91368919,0.23704863){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{-0.5}}}%
     \put(0.91368919,0.38986111){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{0}}}%
     \put(0.91368919,0.54267361){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{0.5}}}%
     \put(0.91368919,0.69548629){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.95361806,0.38986111){\color[rgb]{0,0.49803922,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Controller Input}}}}%
+    \put(0.95361806,0.38986111){\color[rgb]{0,0.49803922,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Control Input}}}}%
     \put(0.75975174,0.67672812){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Gyro Rate}}}%
     \put(0.75975174,0.64874687){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Model Output}}}%
-    \put(0.75975174,0.62076562){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Controller Input}}}%
-    \put(0.51749998,0.7128474){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Drop Test Gyro Data Compared to Model}}}%
+    \put(0.75975174,0.62076562){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Control Input}}}%
+    
   \end{picture}%
 \endgroup%

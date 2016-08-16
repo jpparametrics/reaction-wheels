@@ -50,13 +50,13 @@
   \makeatother%
   \begin{picture}(1,0.75173611)%
     \put(0,0){\includegraphics[width=\unitlength]{motor_torque.pdf}}%
-    \put(0.12999982,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.254,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
-    \put(0.37799999,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
-    \put(0.50200001,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
-    \put(0.62599998,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
-    \put(0.75,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.87400002,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
+    \put(0.12999982,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.254,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.37799999,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.50200001,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
+    \put(0.62599998,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
+    \put(0.75,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.87400002,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
     \put(0.12131164,0.44166146){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{0}}}%
     \put(0.12131164,0.47426041){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{0.2}}}%
     \put(0.12131164,0.5068611){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{0.4}}}%
@@ -67,13 +67,13 @@
     \put(0.12131164,0.66985659){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{1.4}}}%
     \put(0.51749998,0.41038367){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Time (sec)}}}%
     \put(0.08832553,0.55575868){\color[rgb]{0,0,1}\rotatebox{90}{\makebox(0,0)[b]{\smash{Cube Angular Velocity (rad/s)}}}}%
-    \put(0.12999982,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.254,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
-    \put(0.37799999,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
-    \put(0.50200001,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
-    \put(0.62599998,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
-    \put(0.75,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.87400002,0.43295312){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
+    \put(0.12999982,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.254,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.37799999,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.50200001,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
+    \put(0.62599998,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
+    \put(0.75,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.87400002,0.428){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
     \put(0.91368919,0.44166146){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{0}}}%
     \put(0.91368919,0.47426041){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{0.2}}}%
     \put(0.91368919,0.5068611){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{0.4}}}%
@@ -82,14 +82,14 @@
     \put(0.91368919,0.60465834){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{1}}}%
     \put(0.91368919,0.63725711){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{1.2}}}%
     \put(0.91368919,0.66985659){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{1.4}}}%
-    \put(0.94667535,0.55575863){\color[rgb]{0,0.49803922,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Cube Angular Position (rad)}}}}%
-    \put(0.12999982,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.25409895,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
-    \put(0.37819791,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
-    \put(0.50229862,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
-    \put(0.62639756,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
-    \put(0.75049655,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.87459548,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
+    \put(0.96,0.55575863){\color[rgb]{0,0.49803922,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Cube Angular Position (rad)}}}}%
+    \put(0.12999982,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.25409895,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.37819791,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.50229862,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
+    \put(0.62639756,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
+    \put(0.75049655,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.87459548,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
     \put(0.12131164,0.08423609){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{0}}}%
     \put(0.12131164,0.1222691){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{20}}}%
     \put(0.12131164,0.16030036){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{40}}}%
@@ -99,13 +99,13 @@
     \put(0.12131164,0.31243057){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{120}}}%
     \put(0.51749998,0.05295658){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Time (sec)}}}%
     \put(0.0831172,0.19833333){\color[rgb]{0,0,1}\rotatebox{90}{\makebox(0,0)[b]{\smash{Motor-A Angular Velocity (rad/s)}}}}%
-    \put(0.12999982,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.25409895,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
-    \put(0.37819791,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
-    \put(0.50229862,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
-    \put(0.62639756,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
-    \put(0.75049655,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
-    \put(0.87459548,0.07552603){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
+    \put(0.12999982,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.25409895,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.2}}}%
+    \put(0.37819791,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.4}}}%
+    \put(0.50229862,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.6}}}%
+    \put(0.62639756,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0.8}}}%
+    \put(0.75049655,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.87459548,0.070){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%
     \put(0.91368919,0.08423609){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{-30}}}%
     \put(0.91368919,0.1222691){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{-20}}}%
     \put(0.91368919,0.16030036){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{-10}}}%
@@ -113,8 +113,7 @@
     \put(0.91368919,0.23636458){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{10}}}%
     \put(0.91368919,0.27439759){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{20}}}%
     \put(0.91368919,0.31243057){\color[rgb]{0,0.49803922,0}\makebox(0,0)[lb]{\smash{30}}}%
-    \put(0.94841148,0.19833329){\color[rgb]{0,0.49803922,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Motor Torque (mNm)}}}}%
-    \put(0.51749998,0.68721771){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Cube Response}}}%
-    \put(0.51749998,0.32979168){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Motor A Response}}}%
+    \put(0.96,0.19833329){\color[rgb]{0,0.49803922,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Motor Torque (mNm)}}}}%
+    
   \end{picture}%
 \endgroup%
