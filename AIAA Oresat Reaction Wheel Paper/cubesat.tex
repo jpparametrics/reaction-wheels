@@ -63,6 +63,10 @@
   Erin S. Schmidt\\
   {\normalsize\itshape
   Portland State University, Portland, OR, 97201}
+  \and
+  Calvin\\
+  {\normalsize\itshape
+  Portland State University, Portland, OR, 97201}
  }
 
  % Data used by 'handcarry' option if invoked
@@ -174,29 +178,34 @@ G_A(s)=\frac{\theta_{x,cube}(s)}{\theta_A(s)}=\frac{s^2}{\cfrac{I_{x,cube}}{\sin
 Using the transfer functions, given schematically for one axis by Eqn. \ref{eq:xfer} a simulation was created in GNU Octave which yielded step response plots shown in Figure \ref{fig:simulation}. The simulation will further aid in Bode analysis for the determination of stability margins. These relate the frequency response of the system to its time response. The Margins can be adjusted with the use of a controller to affect the time response characteristics of the system. In the case of the ground test system the rise time for a $90^{\circ}$ step input should be under 1 second. 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.35\linewidth]{Equations/Cube_FBD.JPG}
+  \includesvg[width=0.35\linewidth]{FBD}
   \caption{Free Body Diagram of the cubesat in the Cartesian X axis.}
   \label{fig:FBD}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.9\linewidth]{simulation.png}
-  \caption{Angular velocity step responses in the cardinal axes of the CubeSat (left side), and individual motor velocities (right side).}
+  {\footnotesize \includesvg[width=0.9\linewidth]{motor_torque}}
+  \caption{CubeSat step response compared with singular motor response.}
   \label{fig:simulation}
 \end{figure}
 
 \begin{figure}[!ht]
  \centering
- \includesvg[width=0.5\columnwidth]{Gyro_Data_vs_Model}
- \caption{Data data.}
+ {\footnotesize \includesvg[width=0.9\linewidth]{Gyro_Data_vs_Model}}
+ \caption{Drop tower test data compared to the predictive model.}
 \end{figure}
 
 \begin{figure}[!ht]
  \centering
- \includesvg[width=0.9\linewidth]{Drop_test}
- \caption{Data data.}
+ {\includesvg[width=0.9\linewidth]{drop_test}}
+ \caption{Drop tower test data compared to the predictive model.}
 \end{figure}
+
+\section{Testing}
+Utilizing the Dryden Drop Tower facility at Portland State University, the prototype cubesat was tested using a closed loop proportional controller. Because of this test the mathematical model of the cubsat system was partially validated. The Model is characteristically correct and within an order of magnitude, and only small errors remain.
+
+Because the model is close it can be used to select a series of test points to create a bode diagram that is more accurate. To perform this type of bode analysis several frequencies will need to be chosen to create a complete bode diagram. Once the bode diagram is created a new model can be backed out, and controller design can be started.
 
 \section{Future work}
 An exciting testing opportunity involves exploiting the high-quality $\mu$-gravity environment of Portland State University's Dryden Drop Tower (DDT) facility for free fall tests of the reaction wheel system. The Dryden Drop Tower, patterned on the 2.2 Second Drop Tower facility at NASA's Glenn Research Center in Cleveland, Ohio, is optimized for exceptionally fast drop turnaround times. The DDT is one of the most productive Drop Towers in the world for its class, with more than xx drops over its xx year history. The DDT's 2.1 seconds of free-fall conditions provide unique opportunities for the observation of phenomena that are usually masked at the macro-scale in 1-g gravity fields. In the planned experiment the reaction wheel system will be commanded to complete two independent $90^{\circ}$ roll programs of the cubesat in the brief cinderella-like moment before the simulacrum of $\mu$-gravity disappears 2.1 seconds later.
