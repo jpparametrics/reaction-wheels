@@ -50,11 +50,11 @@
   \makeatother%
   \begin{picture}(1,0.51659352)%
     \put(0,0){\includegraphics[width=\unitlength]{drop_test.pdf}}%
-    \put(0.00268116,0.51479306){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13731582\unitlength}\raggedright t = 0.51 s\end{minipage}}}%
+    \put(0.000,0.51479306){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13731582\unitlength}\raggedright t = 0.51 s\end{minipage}}}%
     \put(0.24746546,0.51050602){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08849454\unitlength}\raggedright 0.61 s\end{minipage}}}%
     \put(0.48418754,0.51044874){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11902685\unitlength}\raggedright 0.73 s\end{minipage}}}%
     \put(0.71709426,0.51232727){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11934621\unitlength}\raggedright 0.86 s\end{minipage}}}%
-    \put(0.00669754,0.25019783){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.12281401\unitlength}\raggedright t = 0.99 s\end{minipage}}}%
+    \put(0,0.25019783){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.12281401\unitlength}\raggedright t = 0.99 s\end{minipage}}}%
     \put(0.25276244,0.2497228){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11094665\unitlength}\raggedright 1.11 s\end{minipage}}}%
     \put(0.48011107,0.24869499){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10611438\unitlength}\raggedright 1.23 s\end{minipage}}}%
     \put(0.71487892,0.24818109){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10630408\unitlength}\raggedright 1.36 s\end{minipage}}}%

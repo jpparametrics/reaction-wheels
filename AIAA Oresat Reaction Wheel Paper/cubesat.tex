@@ -56,15 +56,14 @@
  \title{An Open-Source Reaction Wheel System for Oregon's First Satellite}
 
  \author{
-  Jeremy A. Louke\\
+  Jeremy A. Louke%
+  	\thanks{Student BScME, Maseeh College of Engineering, Student Member.}\\
   {\normalsize\itshape
    Portland State Aerospace Society, Portland, OR, 97201}\\
   \and
-  Erin S. Schmidt\\
-  {\normalsize\itshape
-  Portland State University, Portland, OR, 97201}
-  \and
-  Calvin\\
+  Erin S. Schmidt% 
+  	\thanks{Student MSME, Maseeh College of Engineering, Student Member.} \ \
+  Calvin J. Young\thanksibid{1}\\
   {\normalsize\itshape
   Portland State University, Portland, OR, 97201}
  }
@@ -86,12 +85,14 @@
 \maketitle
 
 \begin{abstract}
-Portland State University is developing Oregon's first orbital satellite, a 2U Cubesat, dubbed Oresat. This cubesat will use a reaction wheel system for attitude control and pointing of the onboard low-gain antenna. Details of the current stage of development of the reaction wheel ground test article, and its controller, are presented here. Future work includes attitude control testing in the brief (2.1 s) free-fall environment of Portland State University's Dryden Drop Tower.
+Portland State University is developing Oregon's first orbital satellite, a 2U CubeSat, dubbed Oresat. This CubeSat will use a reaction wheel system for attitude control and pointing of the onboard low-gain antenna. Details of the development of the reaction wheel ground test article, and its controller, are presented here. Finally, preliminary results of attitude control testing conducted in the brief (2.1 s) free-fall environment of Portland State University's Dryden Drop Tower are presented here. 
 \end{abstract}
 
 \section*{Nomenclature}
 
-\begin{tabbing}
+\begin{center}
+\parbox{0cm}
+{\begin{tabbing}
   XXX \= \kill% this line sets tab stop
   $M_0^{+ \circlearrowleft}$ \qquad Moment in the x-axis (N m)\\
   $T^0$ \qquad Torque (N m)\\
@@ -100,18 +101,26 @@ Portland State University is developing Oregon's first orbital satellite, a 2U C
   $\ddot{\theta}$ \qquad Angular velocity(${}^{\circ}/s^2$) \\
   $I$ \qquad Moment of Inertia (N $\textrm{m}^2$)\\
   $b$ \qquad Damping Coefficient (N s/m)\\ 
-  $G$ \qquad Spring Coefficient (N/m)\\ \\
+  $G$ \qquad Spring Coefficient (N/m)\\
+  $COTS$ \qquad Commercial Off-The Shelf\\
+  $FDM$ \qquad Fused Deposition Modeling\\
+  $PWM$ \qquad Pulse Width Modulation\\ \\
   \textit{Subscripts}\\
   $x$ \qquad Index for Cartesian axes \\
   $rw$\qquad Reaction Wheel\\
   $n$ \qquad Motor Index\\
   $A, B, C, D$ \qquad Indices for Motors A, B, C, and D\\
- \end{tabbing}
-
+ \end{tabbing}}
+ \end{center}
+ 
 \section{Introduction}
-Small educational satellites have been launched by dozens of universities around the United States as part of NASA’s CubeSat Launch Initiative, especially under the auspices of the Educational Launch of Nanosatellites (ELaNa) program. As of 2015 cubesats from 29 states have flown under the program, however the great state of Oregon has yet to join their ranks\cite{Mahoney:15bk}. During the summer of 2015 the Oresat project was initiated by the Portland State Aerospace Society to rectify this situation. The Portland State Aerospace Society (PSAS) is an engineering student organization and citizen science project located at Portland State University dedicated to developing low-cost, open-source, and open-hardware high-powered rockets and avionics systems with special interests in venture class launch vehicle technologies and nanosatellites\cite{PSAS:15bk}.\\
+Small educational satellites have been launched by dozens of universities around the United States as part of NASA’s CubeSat Launch Initiative (CLSI), especially under the auspices of the Educational Launch of Nanosatellites (ELaNa) program. As of 2015 CubeSats from 29 states have flown under the program, however the great state of Oregon has yet to join their ranks\cite{Mahoney:15bk}. During the summer of 2015 the Oresat project was initiated by the Portland State Aerospace Society (PSAS) to rectify this situation. PSAS is an engineering student organization and citizen science project located at Portland State University dedicated to developing low-cost, open-source, and open-hardware high-powered rockets and avionics systems with special interests in venture class launch vehicle technologies and nanosatellites\cite{PSAS:15bk}.\\
 
-The Oresat satellite will be a Cal Poly design-specification 2U cubesat\cite{Cubesat:14bk}. Oresat is pictured in Figure \ref{fig:oresat}. The project objectives are to test several subsystems in the environment of a 400 km circular Low Earth Orbit, including PSAS’s Sputnik board, and DxWiFi subsystems. The Sputnik command, control, and communication (C3) board is based on a MKW01Z128 microcontroller, and has a custom “arduino-like” breakout. Sputnik is being designed expressly for the space environment, and will include some measure of fault-tolerance and radiation hardening. Another major project, dubbed DxWiFi, is to be able to communicate space-to-ground, and ground-to-space via a COTS IEEE 802.11b radio module aboard the cubesat. Ground stations for cubesat telemetry downlink are expected to be part of the SatNOGs open-source satellite ground station network. Due to practical issues with telemetry downlink power budgets and and the limitations of the low-gain deployable antenna some element of directional pointing is required. Following from this is the need for a robust system to provide attitude control for Oresat attitude control system. PSAS has selected a reaction wheel based system to provide attitude control for Oresat. Per PSAS’s open-source mandate all  (non-ITAR) project development deliverables are being made publicly available under a GNU GPL v2 license\cite{Oresat:15bk}. It is hoped by the authors, and the members of PSAS that the discourse around educational cubesats and their design will be elevated by making the information for this project publicly available.
+The Oresat satellite will follow the ``2U" CubeSat standard \cite{Cubesat:14bk}. A CAD render of the Oresat concept is pictured in Figure \ref{fig:oresat}. The primary objectives of the project are to test several subsystems in the environment of a 400 km circular Low Earth Orbit: the ``Low Gain Radio (LGR)" communication board and the highly tolerant ``System Controller" board. The LGR is the main low-gain radio system based on a 436 MHz radio system using the MKW01Z128 microcontroller with built in sub-1GHz radio. The System Controller is being designed expressly for the space environment, and will include some measure of fault-tolerance and radiation hardening.
+
+The secondary mission goal is to run an educational outreach project in the state of Oregon. Called ``DxWiFi", after the Amateur Radio ``Dx" code for distance, OreSat will broadcast a live video feed from space to the ground using the standard 2.4 GHz  802.11b ``WiFi" protocol. DxWiFi ground stations will be built by Oregon high schools using 3D printers, common-off-the-shelf WiFi adapter cards, and existing augmented reality cellphone apps that track satellites.
+
+A severely power limited ($\sim$ 1 W) S-band downlink from LEO unfortunately requires high gain antennas, both on the ground and on the space vehicle. However, in order to minimize required deployables on the space vehicle, and to provide for the general simplicity of design, construction, and operation of future ground stations, we chose a 16 turn Helical with approximately 15 dBi gain. This gives a relatively broad beam width antenna, requiring pointing, but only on the order of a 5-10 degrees. Since nadir pointing will only allow a few seconds of data link, Oresat must "point and stare" at a ground station that has requested to download video. This degrees-per-second slew of the antenna (and camera) requires rapid pointing changes that magnetorquers simply can not provide. Following from this is the need for a robust system to provide attitude control for Oresat attitude control system. PSAS has selected a reaction wheel based system to provide attitude control for Oresat. Per PSAS’s open-source mandate all (non-ITAR) project development deliverables are being made publicly available under a GNU GPL v2 license\cite{Oresat:15bk}. It is hoped by the authors, and the members of PSAS that the discourse around educational CubeSats and their design will be elevated by making the information for this project publicly available.
 
 \begin{figure}[h!]
   \centering
@@ -121,24 +130,24 @@ The Oresat satellite will be a Cal Poly design-specification 2U cubesat\cite{Cub
 \end{figure}
 
 \section{Concept Definition}
-	Angular rate and pointing precision requirements for the flight attitude control system are determined from orbital parameters (likely those offered by Nanoracks deployment from the ISS) and the expected performance of the PSAS DxWiFi telemetry system. The ground test article is a proof of concept and uses inexpensive COTS DC brushless motors which are significantly more powerful than those required for the flight use case. The ground test article is broadly similar in design to the flight system, for example by using 4 momentum-wheels in a pyramid configuration for added redundancy and on-orbit mission assurance. Such a design is similar one recently developed for a master's thesis project at California Polytechnic State University San Luis Obispo\cite{Logan:08bk}. A magnetorquer is used to periodically dump accumulated momentum into the Earth's magnetic field. The principle difference between the ground test and flight designs is that the ground test article uses the 1U form factor whereas Oresat will be 2U.
+	Angular rate and pointing precision requirements for the flight attitude control system are determined from orbital parameters (likely those offered by Nanoracks deployment from the ISS) and the expected performance of the PSAS DxWiFi telemetry system. The ground test article is a proof of concept and uses inexpensive COTS DC brushless motors which are significantly more powerful than those required for the flight use case. The ground test article is broadly similar in design to the flight system, for example by using 4 momentum-wheels in a pyramid configuration for added redundancy and on-orbit mission assurance. Such a design is similar one recently developed for a master's thesis project at California Polytechnic State University San Luis Obispo\cite{Logan:08bk}. A magnetorquer will be used to periodically dump accumulated momentum into the Earth's magnetic field. The principle difference between the ground test and flight designs is that the ground test article uses the 1U form factor whereas Oresat will be 2U.
 
 \section{Design and Fabrication}
-	The Oresat reaction wheel system chassis was developed using rapid prototyping techniques over a short time period. This enables rapid design iteration cycles. A mockup 1U cubesat structure was drafted in SolidWorks CAD, and fabricated by FDM 3D printers. The cubesat structural rails were printed with recesses for hex nuts to ease assembly. The ground test article is shown in Figure \ref{fig:rcs} As previously noted there are several departures in the design of the ground test article from the flight system. Among these are COTS DC brushless motors used to drive the momentum wheels. Having a very high RPM limit, specifically 22,000 RPM, these motors provide substantially more torque, shaft power, and shaft speed than required by the flight system. The use of such motors is justified due to the need to counter 1-g gravity in benchtop tests, to react quickly to perturbations, and to test the limits of the controller rise time. Additionally, the ground test article is not constrained by requirements for power consumption as the flight system surely will be. 
+	The Oresat reaction wheel system chassis was developed using rapid prototyping techniques over a short time period (approximately 8 weeks). This approach enables rapid design iteration cycles. A mockup 1U CubeSat structure was drafted in SolidWorks CAD, and fabricated using a FDM 3D printer. Mounted on the 3D-printed chassis are the 4X DC brushless motors, a 4-cell Li-Po battery pack, IMU shield, Intel Edison microcontroller and accompanying Arduino breakout. This `ground' test article is shown in Figure \ref{fig:rcs}. As previously noted there are several departures in the design of the ground test article from the flight system. Among these are COTS DC brushless motors used to drive the momentum wheels; having a very high RPM limit, specifically 22,000 RPM, these motors provide substantially more torque, shaft power, and shaft speed than required by the flight system. The use of such motors is justified by the need to ground test the controllers ability to react quickly to perturbations, and to test the limits of the controller rise time. In practice, the ground test article is not constrained by requirements for power consumption, or heat generation as the flight system surely will be. 
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.7\linewidth]{20160224_195322.png}
-  \caption{Reaction wheel ground test articles, completed prototype and CAD design in SolidWorks.}
+  \caption{Reaction wheel ground test articles: a CAD render in SolidWorks, and the completed prototype.}
   \label{fig:rcs}
 \end{figure}
 
 \section{Controls Simulation and Design}
-The Controller is implemented on an Intel Edison with code written in Python. The Edison receives feedback from a 9-DoF IMU and sends signals via GPIO to the motors. The top-level controller design procedure was as follows:
+The controller for the reaction wheel system is a PI loop implemented on an Intel Edison with code written in Python. The Edison receives feedback from a 9-DoF IMU and sends signals via GPIO to the motors. The top-level controller design procedure was as follows:
 \begin{enumerate}
 \item Determine the transfer functions from dynamics analysis of free body diagrams of the system
 \item Create simulation in GNU Octave
-\item Design the controller using classical Bode techniques
+\item Design the controller using iterative testing (with comparisons to the model) and classical Bode techniques
 \end{enumerate}
 The transfer functions are determined with a dynamics analysis of the free body diagram, shown schematically for a single axis in Figure \ref{fig:FBD}. The forces acting on the cube are the torques created by the motors $T_i^0$, damping effects $b_1 \dot{\theta}_{cube}$, and spring effects $G_1 \theta_{cube}$. Summing the moments around the center of gravity gives the following equation:\\
 
@@ -160,7 +169,7 @@ This gives us the following equation:\\
 \[
 I_{x,cube} \alpha_x + b_x \dot{\theta}_{x,cube} + G_x \theta_{x,cube} = \sin(45^{\circ}) I_{rw} (\ddot{\theta}_A + \ddot{\theta}_B -\ddot{\theta}_C - \ddot{\theta}_D)
 \]\\	
-The definition of a transfer function is the output of a system with respect to a single input, so all motors are set to zero except for one (A for this example) and apply a Laplace transform to the equation:\\
+Per the textbook definition of a transfer function we have the output of a system with respect to a single input, so all motors are set to zero except for one (A for this example) and apply a Laplace transform to the equation:\\
 
 \[
 \frac{I_{x,cube}}{\sin(45^{\circ}) I_{rw}} \theta_{x,cube} s^2 +
@@ -175,11 +184,11 @@ Finally moving $\theta_{cube}$ and $\theta_A$ to the left side of the equation a
 G_A(s)=\frac{\theta_{x,cube}(s)}{\theta_A(s)}=\frac{s^2}{\cfrac{I_{x,cube}}{\sin(45^{\circ}) I_{rw}}s^2 + \cfrac{b_x}{\sin(45^{\circ}) I_{rw}}s + \cfrac{G_x}{\sin(45^{\circ}) I_{rw}}}
 \end{equation}\\
 	
-Using the transfer functions, given schematically for one axis by Eqn. \ref{eq:xfer} a simulation was created in GNU Octave which yielded step response plots shown in Figure \ref{fig:simulation}. The simulation will further aid in Bode analysis for the determination of stability margins. These relate the frequency response of the system to its time response. The Margins can be adjusted with the use of a controller to affect the time response characteristics of the system. In the case of the ground test system the rise time for a $90^{\circ}$ step input should be under 1 second. 
+Using the transfer functions, given schematically for one axis by Eqn. \ref{eq:xfer} a simulation was created in GNU Octave which yielded step response plots shown in Figure \ref{fig:simulation}. The simulation will further aid in Bode analysis for the determination of stability margins. These relate the frequency response of the system to its time response. The margins can be adjusted with the use of a controller to affect the time response characteristics of the system. In the case of the ground test system the rise time for a $90^{\circ}$ step input should be under 1 second. 
 \begin{figure}[h!]
   \centering
   \includesvg[width=0.35\linewidth]{FBD}
-  \caption{Free Body Diagram of the cubesat in the Cartesian X axis.}
+  \caption{Free Body Diagram of the CubeSat in the Cartesian x-axis.}
   \label{fig:FBD}
 \end{figure}
 
@@ -192,26 +201,25 @@ Using the transfer functions, given schematically for one axis by Eqn. \ref{eq:x
 
 \begin{figure}[!ht]
  \centering
- {\footnotesize \includesvg[width=0.9\linewidth]{Gyro_Data_vs_Model}}
- \caption{Drop tower test data compared to the predictive model.}
+ {\includesvg[width=0.9\linewidth]{drop_test}}
+ \caption{Time lapse of the CubeSat controller drop tower test. Initial roll impulse damped to 0 rad/s in approximately 1.9 s.}
+ \label{fig:lapse}
 \end{figure}
 
 \begin{figure}[!ht]
  \centering
- {\includesvg[width=0.9\linewidth]{drop_test}}
- \caption{Time lapse of the cube control drop tower test. Initial roll impulse of xx damped to xx in xx s.}
+ {\footnotesize \includesvg[width=0.9\linewidth]{Gyro_Data_vs_Model}}
+ \caption{Drop tower test 1-DoF gyro data for z-angular rates compared to the controller model.}
+ \label{fig:drop_results}
 \end{figure}
 
 \section{Testing}
-An exciting testing opportunity involves exploiting the high-quality $\mu$-gravity environment of Portland State University's Dryden Drop Tower (DDT) facility for free fall tests of the reaction wheel system. The Dryden Drop Tower, patterned on the 2.2 Second Drop Tower facility at NASA's Glenn Research Center in Cleveland, Ohio, is optimized for exceptionally fast drop turnaround times. The DDT is one of the most productive Drop Towers in the world for its class, with more than xx drops over its xx year history. The DDT's 2.1 seconds of free-fall conditions provide unique opportunities for the observation of phenomena that are usually masked at the macro-scale in 1-g gravity fields. In the planned experiment the reaction wheel system will be commanded to complete two independent $90^{\circ}$ roll programs of the cubesat in the brief cinderella-like moment before the simulacrum of $\mu$-gravity disappears 2.1 seconds later.
+An exciting testing opportunity involves exploiting the high-quality $\mu$-gravity environment of Portland State University's Dryden Drop Tower (DDT) facility for free fall tests of the reaction wheel system. The Dryden Drop Tower, patterned on the 2.2 Second Drop Tower facility at NASA's Glenn Research Center in Cleveland, Ohio, is optimized for exceptionally fast drop turnaround times. The DDT is one of the most productive drop towers in the world for its class, with more than 5800 drops over its 6 year history. The DDT's 2.1 seconds of free-fall conditions provide unique opportunities for the observation of phenomena that are usually masked at the macro-scale in 1-g gravity fields. The relative quality of the $\mu$-gravity environment of a drop tower is very high compared to those offered by parabolic flights (generally $10^{-5}$ or $10^{-6}$-g for the drop tower compared to $10^{-1}$ or $10^{-2}$-g for a parabolic flight. In this high quality $\mu$-gravity the CubeSat attitude control can be tested in an environment similar to that of space (at least in an inertial sense). In the DDT the reaction wheel system testing program involved a random ( 25 \% duty cycle PWM) perturbing impulse followed by a command to damp this roll in the brief cinderella-like moment before the simulacrum of $\mu$-gravity disappears 2.1 seconds later. A a time lapse plot showing the initial roll impulse and subsequent damping is presented in Figure \ref{fig:lapse}. On a qualitative examination of the simulated roll response compared to the experimental gyro rates from the IMU the model appears to be quite accurate (in terms of the frequency and damping ratio), at least for this particular impulse. This is shown in Figure \ref{fig:drop_results}. The 0.1 s phase shift between the gyro data and the angular rates predicted by the simulation may be due to the discrete time lag of the physical controller. The gyro data is presented here in an unfiltered form. 
 
-Utilizing the Dryden Drop Tower facility at Portland State University, the prototype cubesat was tested using a closed loop proportional controller. Because of this test the mathematical model of the cubsat system was partially validated. The Model is characteristically correct and within an order of magnitude, and only small errors remain.
+Following from the first test, an initial modicum of model validation allows us to continue with the model as the basis for further iterative controls testing. We plan to select a series of additional test points to formulate a more complete Bode diagram. This will require drop tests at several additional frequencies. Once the Bode diagram is completed a new model can be backed out, and the iterative controller design loop can be started anew. This work is in progress (as of August, 2016), and should be completed before the Oresat Critical Design Review in November 2016 which is concurrent with the next round of NASA ELaNa proposals.
 
-Because the model is close it can be used to select a series of test points to create a bode diagram that is more accurate. To perform this type of bode analysis several frequencies will need to be chosen to create a complete bode diagram. Once the bode diagram is created a new model can be backed out, and controller design can be started.
-
-\newpage
-\section{Future work}
-It is expected that the 1-g and $\mu$-gravity testing campaigns for the Oresat reaction wheel system will be completed by early June. This should leave a substantial allowance of time for further design iterations leading up to the Oresat Critical Design Review before the next round of ELaNa proposals are due in November 2016.
+\section{Acknowledgments}
+We are indebted to PSU undergraduates Marie House, and Alex Farias, for their assistance with testing the prototype. We are further indebted to the PSU's Dryden Drop Tower Lab and the Lab for Interconnected Devices for their support both in fabricating and testing this prototype. We acknowlegde PSAS's faculty mentor, Andrew Greenberg, for his support and advice. Finally, we appreciate the support of the PSAS crowdfunders for helping to translate `citizen science' from a abstract ideal into a well realized reality, and for helping to translate some starry-eyed STEM student's dreams of space into Oregon's first orbital satellite.
 
 \begin{thebibliography}{9}% maximum number of references (for label width)
 
