@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.16)  17 AUG 2016 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.16)  17 AUG 2016 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -402,7 +402,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
@@ -416,7 +416,7 @@ Missing character: There is no ™ in font cmr10!
 <2U_CubeSat_V0o3.PNG, id=18, 90.3375pt x 151.767pt>
 File: 2U_CubeSat_V0o3.PNG Graphic file (type png)
  <use 2U_CubeSat_V0o3.PNG>
-Package pdftex.def Info: 2U_CubeSat_V0o3.PNG used on input line 127.
+Package pdftex.def Info: 2U_CubeSat_V0o3.PNG used on input line 128.
 (pdftex.def)             Requested size: 140.94107pt x 236.78102pt.
 
 [2 <./2U_CubeSat_V0o3.PNG>]
@@ -424,57 +424,57 @@ Package pdftex.def Info: 2U_CubeSat_V0o3.PNG used on input line 127.
 File: 20160224_195322.png Graphic file (type png)
 
 <use 20160224_195322.png>
-Package pdftex.def Info: 20160224_195322.png used on input line 140.
+Package pdftex.def Info: 20160224_195322.png used on input line 141.
 (pdftex.def)             Requested size: 328.82405pt x 147.7627pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 [3 <./20160224_195322.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 <./FBD.pdf, id=29, 360.01935pt x 379.30156pt>
 File: ./FBD.pdf Graphic file (type pdf)
  <use ./FBD.pdf>
-Package pdftex.def Info: ./FBD.pdf used on input line 190.
+Package pdftex.def Info: ./FBD.pdf used on input line 191.
 (pdftex.def)             Requested size: 164.41333pt x 173.21912pt.
  (./FBD.pdf_tex
 <FBD.pdf, id=30, 360.01935pt x 379.30156pt>
@@ -490,7 +490,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./motor_torque.pdf Graphic file (type pdf)
 
 <use ./motor_torque.pdf>
-Package pdftex.def Info: ./motor_torque.pdf used on input line 197.
+Package pdftex.def Info: ./motor_torque.pdf used on input line 198.
 (pdftex.def)             Requested size: 422.7996pt x 317.83374pt.
  (./motor_torque.pdf_tex
 <motor_torque.pdf, id=32, 462.52798pt x 347.69899pt>
@@ -508,7 +508,7 @@ disabled (restricted).
 <./drop_test.pdf, id=33, 3663.97421pt x 1892.7853pt>
 File: ./drop_test.pdf Graphic file (type pdf)
  <use ./drop_test.pdf>
-Package pdftex.def Info: ./drop_test.pdf used on input line 204.
+Package pdftex.def Info: ./drop_test.pdf used on input line 205.
 (pdftex.def)             Requested size: 422.77382pt x 218.4022pt.
 
 (./drop_test.pdf_tex <drop_test.pdf, id=34, 3663.97421pt x 1892.7853pt>
@@ -522,7 +522,7 @@ Package pdftex.def Info: drop_test.pdf used on input line 52.
 File: ./Gyro_Data_vs_Model.pdf Graphic file (type pdf)
 
 <use ./Gyro_Data_vs_Model.pdf>
-Package pdftex.def Info: ./Gyro_Data_vs_Model.pdf used on input line 211.
+Package pdftex.def Info: ./Gyro_Data_vs_Model.pdf used on input line 212.
 (pdftex.def)             Requested size: 422.7996pt x 317.83374pt.
  (./Gyro_Data_vs_Model.pdf_tex
 <Gyro_Data_vs_Model.pdf, id=36, 462.52798pt x 347.69899pt>
@@ -540,28 +540,28 @@ s with page group included in a single page
 pdfTeX warning: pdflatex (file ./Gyro_Data_vs_Model.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 1314) in paragraph at lines 227--228
+Underfull \hbox (badness 1314) in paragraph at lines 228--229
 []\OT1/cmr/m/n/8 Mahoney, Erin. \OT1/cmr/m/it/8 Cube-Sat Launch Ini-tia-tive: 5
 0 Cube-Sats from 50 States in 5 Years. \OT1/cmr/m/n/8 NASA, April 9, 2015.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
@@ -569,7 +569,7 @@ Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no ™ in font cmr8!
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
@@ -579,11 +579,11 @@ AED: lastpage setting LastPage
 Here is how much of TeX's memory you used:
  5238 strings out of 493105
  75315 string characters out of 6137072
- 168132 words of memory out of 5000000
+ 168200 words of memory out of 5000000
  8588 multiletter control sequences out of 15000+600000
  12202 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,13n,98p,1999b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,98p,2060b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
@@ -600,7 +600,7 @@ cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on cubesat.pdf (7 pages, 22633665 bytes).
+Output written on cubesat.pdf (7 pages, 22634363 bytes).
 PDF statistics:
  203 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams

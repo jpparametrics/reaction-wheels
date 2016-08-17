@@ -57,12 +57,12 @@
 
  \author{
   Jeremy A. Louke%
-  	\thanks{Student BScME, Maseeh College of Engineering, Student Member.}\\
+  	\thanks{Student BScME, Maseeh College of Engineering, Portland State University, Student Member.}\\
   {\normalsize\itshape
    Portland State Aerospace Society, Portland, OR, 97201}\\
   \and
   Erin S. Schmidt% 
-  	\thanks{Student MSME, Maseeh College of Engineering, Student Member.} \ \
+  	\thanks{Student MSME, Maseeh College of Engineering, Portland State University, Student Member. esch2@pdx.edu} \ \
   Calvin J. Young\thanksibid{1}\\
   {\normalsize\itshape
   Portland State University, Portland, OR, 97201}
@@ -104,6 +104,7 @@ Portland State University is developing Oregon's first orbital satellite, a 2U C
   $G$ \qquad Spring Coefficient (N/m)\\
   $COTS$ \qquad Commercial Off-The Shelf\\
   $FDM$ \qquad Fused Deposition Modeling\\
+  $IMU$ \qquad Inertial Measurement Unit\\
   $PWM$ \qquad Pulse Width Modulation\\ \\
   \textit{Subscripts}\\
   $x$ \qquad Index for Cartesian axes \\
@@ -213,8 +214,8 @@ Using the transfer functions, given schematically for one axis by Eqn. \ref{eq:x
  \label{fig:drop_results}
 \end{figure}
 
-\section{Testing}
-An exciting testing opportunity involves exploiting the high-quality $\mu$-gravity environment of Portland State University's Dryden Drop Tower (DDT) facility for free fall tests of the reaction wheel system. The Dryden Drop Tower, patterned on the 2.2 Second Drop Tower facility at NASA's Glenn Research Center in Cleveland, Ohio, is optimized for exceptionally fast drop turnaround times. The DDT is one of the most productive drop towers in the world for its class, with more than 5800 drops over its 6 year history. The DDT's 2.1 seconds of free-fall conditions provide unique opportunities for the observation of phenomena that are usually masked at the macro-scale in 1-g gravity fields. The relative quality of the $\mu$-gravity environment of a drop tower is very high compared to those offered by parabolic flights (generally $10^{-5}$ or $10^{-6}$-g for the drop tower compared to $10^{-1}$ or $10^{-2}$-g for a parabolic flight. In this high quality $\mu$-gravity the CubeSat attitude control can be tested in an environment similar to that of space (at least in an inertial sense). In the DDT the reaction wheel system testing program involved a random ( 25 \% duty cycle PWM) perturbing impulse followed by a command to damp this roll in the brief cinderella-like moment before the simulacrum of $\mu$-gravity disappears 2.1 seconds later. A a time lapse plot showing the initial roll impulse and subsequent damping is presented in Figure \ref{fig:lapse}. On a qualitative examination of the simulated roll response compared to the experimental gyro rates from the IMU the model appears to be quite accurate (in terms of the frequency and damping ratio), at least for this particular impulse. This is shown in Figure \ref{fig:drop_results}. The 0.1 s phase shift between the gyro data and the angular rates predicted by the simulation may be due to the discrete time lag of the physical controller. The gyro data is presented here in an unfiltered form. 
+\section{Controller Testing and Results}
+An exciting testing opportunity involves exploiting the high-quality $\mu$-gravity environment of Portland State University's Dryden Drop Tower (DDT) facility for free fall tests of the reaction wheel system. The Dryden Drop Tower, patterned on the 2.2 Second Drop Tower facility at NASA's Glenn Research Center in Cleveland, Ohio, is optimized for exceptionally fast drop turnaround times. The DDT is one of the most productive drop towers in the world for its class, with more than 5800 drops over its 6 year history. The DDT's 2.1 seconds of free-fall conditions provide unique opportunities for the observation of phenomena that are usually masked at the macro-scale in 1-g gravity fields. The relative quality of the $\mu$-gravity environment of a drop tower is very high compared to those offered by parabolic flights (generally $10^{-5}$ or $10^{-6}$-g for the drop tower compared to $10^{-1}$ or $10^{-2}$-g for a parabolic flight. In this high quality $\mu$-gravity the CubeSat attitude control can be tested in an environment similar to that of space (at least in an inertial sense). In the DDT the reaction wheel system testing program involved a random ( 25 \% duty cycle PWM) perturbing impulse followed by a command to damp this roll in the brief cinderella-like moment before the simulacrum of $\mu$-gravity disappears 2.1 seconds later. A time lapse plot showing the initial roll impulse and subsequent damping is presented in Figure \ref{fig:lapse}. On a qualitative examination of the simulated roll response compared to the experimental gyro rates from the IMU, the model appears to be quite accurate (in terms of the frequency and damping ratio), at least for this particular impulse. This is shown in Figure \ref{fig:drop_results}. The 0.1 s phase shift between the gyro data and the angular rates predicted by the simulation may be due to the discrete time lag of the physical controller, and also to the small ammount of damping by atmospheric drag. The gyro data is presented here in an unfiltered form. 
 
 Following from the first test, an initial modicum of model validation allows us to continue with the model as the basis for further iterative controls testing. We plan to select a series of additional test points to formulate a more complete Bode diagram. This will require drop tests at several additional frequencies. Once the Bode diagram is completed a new model can be backed out, and the iterative controller design loop can be started anew. This work is in progress (as of August, 2016), and should be completed before the Oresat Critical Design Review in November 2016 which is concurrent with the next round of NASA ELaNa proposals.
 
