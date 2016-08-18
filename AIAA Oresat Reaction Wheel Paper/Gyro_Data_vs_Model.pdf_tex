@@ -60,7 +60,7 @@
     \put(0.12131164,0.38986111){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{0}}}%
     \put(0.12131164,0.51211111){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{20}}}%
     \put(0.12131164,0.63436128){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{40}}}%
-    \put(0.51749998,0.0529844){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{time (s)}}}%
+    \put(0.51749998,0.0529844){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Time (s)}}}%
     \put(0.08658941,0.38986111){\color[rgb]{0,0,1}\rotatebox{90}{\makebox(0,0)[b]{\smash{Cube Angular Velocity (deg/s)}}}}%
     \put(0.1396375,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
     \put(0.30025869,0.067){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1.2}}}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.16)  18 AUG 2016 10:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.16)  18 AUG 2016 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -531,14 +531,6 @@ Package pdftex.def Info: Gyro_Data_vs_Model.pdf used on input line 52.
 pdfTeX warning: pdflatex (file ./motor_torque.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-
-LaTeX Warning: Text page 6 contains only floats.
-
-[6 <./drop_test.pdf> <./Gyro_Data_vs_Model.pdf
-
-pdfTeX warning: pdflatex (file ./Gyro_Data_vs_Model.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
->]
 Underfull \hbox (badness 1314) in paragraph at lines 229--230
 []\OT1/cmr/m/n/8 Mahoney, Erin. \OT1/cmr/m/it/8 Cube-Sat Launch Ini-tia-tive: 5
 0 Cube-Sats from 50 States in 5 Years. \OT1/cmr/m/n/8 NASA, April 9, 2015.
@@ -549,7 +541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-
+[6 <./drop_test.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
@@ -574,7 +566,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
 
 AED: lastpage setting LastPage
-[7] (./cubesat.aux) ) 
+[7 <./Gyro_Data_vs_Model.pdf>] (./cubesat.aux) ) 
 Here is how much of TeX's memory you used:
  5238 strings out of 493105
  75315 string characters out of 6137072
@@ -583,26 +575,27 @@ Here is how much of TeX's memory you used:
  12202 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,13n,98p,1537b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on cubesat.pdf (7 pages, 22635584 bytes).
+</usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msam7.pfb>
+Output written on cubesat.pdf (7 pages, 22635663 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
+ 204 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
