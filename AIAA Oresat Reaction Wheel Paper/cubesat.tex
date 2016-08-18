@@ -97,8 +97,8 @@ Portland State University is developing Oregon's first orbital satellite, a 2U C
   $M_0^{+ \circlearrowleft}$ \qquad Moment in the x-axis (N m)\\
   $T^0$ \qquad Torque (N m)\\
   $\theta$ \qquad Angular position (${}^{\circ}$)\\
-  $\dot{\theta}$ \qquad Angular velocity(${}^{\circ}/s$)\\ 
-  $\ddot{\theta}$ \qquad Angular acceleration(${}^{\circ}/s^2$) \\
+  $\dot{\theta}$ \qquad Angular velocity (${}^{\circ}/s$)\\ 
+  $\ddot{\theta}$ \qquad Angular acceleration (${}^{\circ}/s^2$) \\
   $I$ \qquad Moment of Inertia (N $\textrm{m}^2$)\\
   $b$ \qquad Damping Coefficient (N s/m)\\ 
   $G$ \qquad Spring Coefficient (N/m)\\
@@ -144,7 +144,7 @@ A severely power limited ($\sim$ 1 W) S-band downlink from LEO unfortunately req
 \end{figure}
 
 \section{Controls Simulation and Design}
-The controller for the reaction wheel system is a PI loop implemented on an Intel Edison with code written in Python. The Edison receives feedback from a 9-DoF IMU over analog-in, and sends signals via GPIO to the motors. The top-level controller design procedure was as follows:
+The controller for the reaction wheel system is a Proportional-Integral loop implemented on an Intel Edison with code written in Python. The Edison receives feedback from a 9-DoF IMU over analog-in, and sends signals via GPIO to the motors. The top-level controller design procedure was as follows:
 \begin{enumerate}
 \item Determine the transfer functions from dynamics analysis of free body diagrams of the system
 \item Create simulation in GNU Octave
