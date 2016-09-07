@@ -1,5 +1,5 @@
 \documentclass[slidestop,compress]{beamer}
-\usepackage[orientation=portrait,size=custom, width=25, height=6.5, debug]{beamerposter}
+\usepackage[orientation=portrait,size=custom, width=25, height=7, debug]{beamerposter}
 \usetheme{simple}
 
 \usepackage{lmodern}
@@ -16,11 +16,14 @@
 
 \begin{frame}[plain]
 \begin{block}{\centering Further Work}
-\hspace{1 mm}
+
+\begin{columns}
+\column{.9\textwidth}
 \begin{itemize}
 \item Need more drop-tests: complete Bode diagram to improve dynamical model, further controller design iterations
 \item State determination with sensor fusion via Kalman filtering suntracker, magnetometer, and gyroscopes
 \end{itemize}
+\end{columns}
 \end{block}    
 \end{frame}
 
