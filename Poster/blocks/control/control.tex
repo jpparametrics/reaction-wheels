@@ -15,11 +15,13 @@
 \begin{document}
 
 \begin{frame}[plain]
-\begin{block}{\centering Controls Development}
-\hspace{1 mm}
+\begin{block}{\vspace{0.5 cm} 
+
+\centering Controls Development}
+\begin{columns}
+	\column{.9\textwidth}
 \begin{itemize}
 \item The controller for the reaction wheel system is a simple PID loop 
-\item The microcontroller receives feedback from a 9-DoF IMU over analog-in, and sends signals via GPIO to the DC motors. 
 \item The top-level controller design procedure was as follows:
 \begin{enumerate}
 \item Determine the transfer functions from dynamics analysis of free body diagrams of the system
@@ -31,13 +33,14 @@
 \[
 \sum M_0^{+ \circlearrowleft} = I_{x,cube} \ddot{\theta}_{x,cube} = T^0_{Ax} + T^0_{Bx} - T^0_{Cx} - T^0_{Dx} + T^0_x - \dot{\theta}_{x,cube} - G_x \theta_{x,cube}.
 \] 
-\\
-\item By setting the system to Standard Equilibrium Position (at SEP the input perturbations are set to zero), considering only a single input, substituting the torque-inertia relation,  and taking the Laplace transform we have the transfer function of the cube:
 
+\item By setting the system to Standard Equilibrium Position (at SEP the input perturbations are set to zero), considering only a single input, substituting the torque-inertia relation,  and taking the Laplace transform we arrive at the ({\emph{incredibly simple}}) transfer function of the cube:
 \[G_A(s)=\frac{\theta_{x,cube}(s)}{\theta_A(s)}=\frac{s^2}{\cfrac{I_{x,cube}}{\sin(45^{\circ}) I_{rw}}s^2 + \cfrac{b_x}{\sin(45^{\circ}) I_{rw}}s + \cfrac{G_x}{\sin(45^{\circ}) I_{rw}}}.
 \]
-  
 \end{itemize}
+\end{columns}
+
+\vspace{0.5 cm}
 \end{block}    
 \end{frame}
 
