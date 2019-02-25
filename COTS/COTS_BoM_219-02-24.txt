@@ -1,0 +1,42 @@
+- M2x0.4x4 2x3 shoulder screw
+	number: 90263A111
+	name: 316 STAINLESS STEEL PRECISION SHOULDER SCREW
+	link: https://www.mcmaster.com/90263a111
+	quantity: 16
+	use: fastens the encoder board to the RW cage
+- M2x0.4x6 flathead hex brass
+	number: 97595A277
+	name: BRASS HEX DRIVE FLAT HEAD SCREW
+	link: https://www.mcmaster.com/97595a277
+	quantity: 8
+	use: fastens the magnet cap to the RW
+- M2x0.4x4 flathead Phillips
+	number: 91698A200
+	name: METRIC 18-8 SS FLAT HEAD PHIL MACHINE SCREW
+	link: https://www.mcmaster.com/91698a200
+	quantity: 12
+	use: fastens the RW to the rotor
+- M2.5x0.45x4 flathead hex
+	number: 91294A473
+	name: BLK-OXIDE ALLOY STL HEX DRIVE FLAT HEAD SCREW
+	link: https://www.mcmaster.com/91294a473
+	quantity: 12
+	use: fastens the wedge to the beam
+- M2x0.4x5 flathead Torx
+	number: 92703A144
+	name: STAINLESS STEEL TORX FLAT HEAD SCREWS
+	link: https://www.mcmaster.com/92703a144
+	quantity: 12
+	use: fastens RW cage and wedge
+- M2x0.4x10 flathead hex
+	number: 93395A144
+	name: TYPE 316 SS FLAT-HEAD SOCKET CAP SCREW
+	link: https://www.mcmaster.com/93395a144
+	quantity: 8 (for the demo)
+	use: fastens the frames together
+- M2.5x0.45x10 flathead hex
+	number: 93395A179
+	name: TYPE 316 SS FLAT-HEAD SOCKET CAP SCREW
+	link: https://www.mcmaster.com/93395a179
+	quantity: 10
+	use: fastens the RW beam to the frames
